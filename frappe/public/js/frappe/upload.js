@@ -246,7 +246,7 @@ frappe.upload = {
 					label: __("Private"),
 					fieldname: "is_private",
 					fieldtype: "Check",
-					"default": 1
+					"default": 0
 				}, function(values) {
 					args["is_private"] = values.is_private;
 					frappe.upload.upload_to_server(fileobj, args, opts);
